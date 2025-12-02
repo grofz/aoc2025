@@ -2,10 +2,14 @@
 Solving Advent of Code 2025 in Fortran
 
 - *Day 1: Secret Entrance*
+
   Use brute force to simulate the rotation of safe-wheel and count how
   many times it passes through 0. Modulo approach did not work for Part 2.
 
-- *Day 2:*
+- *Day 2: Gift Shop*
+
+  Search for a repeating pattern in ranges of the numbers. Conversion between
+  number and string using internal file I/O.
 
 - *Day 3:*
 

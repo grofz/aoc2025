@@ -37,8 +37,8 @@ contains
       if (pos==0) ans1 = ans1 + 1
     end do
 
-    print '("Day 01/1: ",i0,1x,l)', ans1, ans1==1059
-    print '("Day 01/2: ",i0,1x,l)', ans2, ans2==6305
+    print '("01/1: ",i0,1x,l)', ans1, ans1==1059
+    print '("01/2: ",i0,1x,l)', ans2, ans2==6305
   end subroutine day2501
 
 end module day2501_mod
