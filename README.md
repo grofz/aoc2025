@@ -11,7 +11,11 @@ Solving Advent of Code 2025 in Fortran
   Search for a repeating pattern in ranges of the numbers. Conversion between
   number and string using internal file I/O.
 
-- *Day 3:*
+- *Day 3: Lobby*
+
+  Select 2 (Part 1) or 12 (Part 2) digits from the block of digits to maximize
+  the number formed from selected digits. Nice and clean solution.
+  Brute-force would probably fail in Part 2.
 
 - *Day 4:*
 

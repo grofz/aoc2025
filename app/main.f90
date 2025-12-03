@@ -1,7 +1,7 @@
 program main
   use day2501_mod
   use day2502_mod
-! use day2503_mod
+  use day2503_mod
 ! use day2504_mod
 ! use day2505_mod
 ! use day2506_mod
@@ -14,6 +14,6 @@ program main
   implicit none
 
   call day2501('inp/01/input.txt')
-! call day2502('inp/02/sample.txt')
   call day2502('inp/02/input.txt')
+  call day2503('inp/03/input.txt')
 end program main
