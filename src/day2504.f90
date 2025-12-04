@@ -8,22 +8,35 @@
       character(len=*), intent(in) :: file
 
       character(len=1), allocatable, dimension (:,:) :: field
-      integer, allocatable, dimension(:,:) :: ngbs
-      integer :: i, j, ans1, nx, ny
+      integer :: ans1, ans2, i
 
       call read_field(file, field)
-      nx = size(field,1)-2
-      ny = size(field,2)-2
-      ngbs = count_ngbs(field)
-
-      do i=1, size(ngbs,1)
-        print '(*(i1))', ngbs(i,:)
+      call remove_rolls(field, ans1)
+      ans2 = ans1
+      do
+        call remove_rolls(field, i)
+        if (i==0) exit
+        ans2 = ans2 + i
       end do
-
-      ans1 = count(ngbs<4 .and. field(1:nx,1:ny)==C_ROLL)
-
       print '("04/1: ",i0,1x,l1)', ans1, ans1==1493
+      print '("04/2: ",i0,1x,l1)', ans2, ans2==9194
     end subroutine day2504
+
+
+    subroutine remove_rolls(a, removed)
+      character(len=1), intent(inout) :: a(0:,0:)
+      integer, intent(out) :: removed
+
+      integer, allocatable, dimension(:,:) :: ngbs
+      integer :: i
+
+      ngbs = count_ngbs(a)
+
+      removed = count(ngbs<4 .and. a(1:ubound(a,1)-1,1:ubound(a,2)-1)==C_ROLL)
+      where (ngbs<4 .and. a(1:ubound(a,1)-1,1:ubound(a,2)-1)==C_ROLL)
+        a(1:ubound(a,1)-1, 1:ubound(a,2)-1) = C_FREE
+      end where
+    end subroutine remove_rolls
 
 
     function count_ngbs(a) result(ngbs)
@@ -68,10 +81,10 @@
           field(i,j) = lines(i)%str(j:j)
         end do
       end do
-      print '("Field of ",i0," lines and ",i0," columns")', nrow, ncol
-      print '("Rolls = ",i0,"  Free = ",i0)', &
-          count(field(1:nrow,1:ncol)==C_ROLL), &
-          count(field(1:nrow,1:ncol)==C_FREE)
+     !print '("Field of ",i0," lines and ",i0," columns")', nrow, ncol
+     !print '("Rolls = ",i0,"  Free = ",i0)', &
+     !    count(field(1:nrow,1:ncol)==C_ROLL), &
+     !    count(field(1:nrow,1:ncol)==C_FREE)
     end subroutine read_field
 
   end module day2504_mod
