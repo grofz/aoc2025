@@ -17,9 +17,18 @@ Solving Advent of Code 2025 in Fortran
   the number formed from selected digits. Nice and clean solution.
   Brute-force would probably fail in Part 2.
 
-- *Day 4:*
+- *Day 4: Printing Department*
 
-- *Day 5:*
+  Two-dimensional array, count the number of neighbours. In Part 2,
+  a "game-of-life" kind of simulation until final (no longer changing) state
+  occurs.
+
+- *Day 5: Cafeteria*
+
+  Have a list of intervals (overlaping). To solve Part 2, intervals are be sorted
+  and modified in order to avoid overlaps. Then compute the total length
+  of the (now no longer overlaping) intervals. Nice problem, and relatively
+  clean (and easy) solution.
 
 - *Day 6:*
 
