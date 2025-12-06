@@ -30,7 +30,11 @@ Solving Advent of Code 2025 in Fortran
   of the (now no longer overlaping) intervals. Nice problem, and relatively
   clean (and easy) solution.
 
-- *Day 6:*
+- *Day 6: Trash Compactor*
+
+  Do some math following numbers and operators from the input. 
+  Part 1 reads numbers from left to right, while Part 2 reads numbers from top
+  to bottom. Reading input into a 2D character array to easier parsing in Part 2.
 
 - *Day 7:*
 

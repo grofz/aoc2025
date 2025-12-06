@@ -4,7 +4,7 @@ program main
   use day2503_mod
   use day2504_mod
   use day2505_mod
-! use day2506_mod
+  use day2506_mod
 ! use day2507_mod
 ! use day2508_mod
 ! use day2509_mod
@@ -17,4 +17,5 @@ program main
   call day2503('inp/03/input.txt')
   call day2504('inp/04/input.txt')
   call day2505('inp/05/input.txt')
+  call day2506('inp/06/input.txt')
 end program main
