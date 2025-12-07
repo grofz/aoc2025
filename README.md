@@ -36,7 +36,12 @@ Solving Advent of Code 2025 in Fortran
   Part 1 reads numbers from left to right, while Part 2 reads numbers from top
   to bottom. Reading input into a 2D character array to easier parsing in Part 2.
 
-- *Day 7:*
+- *Day 7: Laboratories*
+
+  Split the beam as it goes down. Part 1 is an easy simulation, Part 2 requires
+  to count the number of beams that can pass through a point on every line.
+  Do not try to actually list all states! Easy solution once algorithm is
+  figured out.
 
 - *Day 8:*
 
