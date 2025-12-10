@@ -32,7 +32,7 @@ Solving Advent of Code 2025 in Fortran
 
 - *Day 6: Trash Compactor*
 
-  Do some math following numbers and operators from the input. 
+  Do some math following numbers and operators from the input.
   Part 1 reads numbers from left to right, while Part 2 reads numbers from top
   to bottom. Reading input into a 2D character array to easier parsing in Part 2.
 
@@ -43,7 +43,15 @@ Solving Advent of Code 2025 in Fortran
   Do not try to actually list all states! Easy solution once algorithm is
   figured out.
 
-- *Day 8:*
+- *Day 8: Playground*
+
+  From the list of 1000 points, find 1000 shortest pairs. Connect those
+  positions and identify three largest clusters. In Part 2, continue
+  connecting until just one cluster remains. Report the last pair that was
+  connected.
+
+  Used priority queue to generate a list of shortest pairs first, then
+  loop over the pairs and connect the boxes.
 
 - *Day 9:*
 
