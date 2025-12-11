@@ -53,9 +53,16 @@ Solving Advent of Code 2025 in Fortran
   Used priority queue to generate a list of shortest pairs first, then
   loop over the pairs and connect the boxes.
 
-- *Day 9:*
+- *Day 9: Movie Theater*
 
-- *Day 10:*
+  Geometrical problem. Raylight algorithm to find point inside polygon.
+  Many edge cases in Part 2 (unfinished)
+
+- *Day 10: Factory:*
+
+  This problem requires linear algebra optimization with integer unknowns.
+  Using Matlab for solving Part 2. Part 1 using XOR for changing state with
+  a straightforward BFS.
 
 - *Day 11:*
 

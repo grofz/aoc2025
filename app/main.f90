@@ -8,11 +8,11 @@ program main
   use day2507_mod
   use day2508_mod
   use day2509_mod
-! use day2510_mod
+  use day2510_mod
 ! use day2511_mod
 ! use day2512_mod
   implicit none
-  goto 9
+  goto 90
   call day2501('inp/01/input.txt')
   call day2502('inp/02/input.txt')
   call day2503('inp/03/input.txt')
@@ -24,4 +24,6 @@ program main
  90 call day2509('inp/09/sample.txt')
  stop
  9 call day2509('inp/09/input.txt')
+ stop
+  call day2510('inp/10/input.txt')
 end program main
