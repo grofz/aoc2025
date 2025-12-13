@@ -64,6 +64,9 @@ Solving Advent of Code 2025 in Fortran
   Using Matlab for solving Part 2. Part 1 using XOR for changing state with
   a straightforward BFS.
 
-- *Day 11:*
+- *Day 11: Reactor*
+
+  Part 1 was an easy DFS of paths and counting their number. Part 2 required
+  memoization and multiplying particular searches.
 
 - *Day 12:*

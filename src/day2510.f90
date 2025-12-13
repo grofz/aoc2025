@@ -78,7 +78,7 @@ contains
 ! For Part 2 using "intlinprog" function in Matlab
 ! TODO write own solver :-)
 
-  subroutine solve_machine(fid, m)
+  subroutine solve_machine_matlab(fid, m)
     type(machine_t), intent(in) :: m
     integer, intent(in) :: fid
 
