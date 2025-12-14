@@ -10,7 +10,7 @@ program main
   use day2509_mod
   use day2510_mod
   use day2511_mod
-! use day2512_mod
+  use day2512_mod
   implicit none
 
   call day2501('inp/01/input.txt')
@@ -24,4 +24,5 @@ program main
   call day2509('inp/09/input.txt')
   call day2510('inp/10/input.txt')
   call day2511('inp/11/input.txt')
+  call day2512('inp/12/input.txt')
 end program main

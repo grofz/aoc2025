@@ -83,3 +83,5 @@ Solving **Advent of Code 2025** in Fortran.
   Part 2 requires memoization and combining results from specific sub-searches.
 
 - **Day 12: Christmas Tree Park**
+
+  Very funny! In the end it is just parsing exercise, no algorithm needed.
