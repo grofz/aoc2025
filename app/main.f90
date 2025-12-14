@@ -21,12 +21,7 @@ program main
   call day2506('inp/06/input.txt')
   call day2507('inp/07/input.txt')
   call day2508('inp/08/input.txt')
-goto 100
- 90 call day2509('inp/09/sample.txt')
- stop
- 9 call day2509('inp/09/input.txt')
- stop
- 100 continue
+  call day2509('inp/09/input.txt')
   call day2510('inp/10/input.txt')
   call day2511('inp/11/input.txt')
 end program main
